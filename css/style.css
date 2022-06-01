@@ -1,0 +1,25 @@
+/* June 1st, 2022 */
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Test Font */
+  font-family: sans-serif;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 5em;
+}
+
+/* Typography */
+.sign-up-title {
+  text-align: center;
+  font-size: 3rem;
+}
