@@ -9,10 +9,60 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1 class="sign-up-title">Sign-up Form</h1>
-    </div>
+    <form>
+      <div class="image-logo">Yeshi</div>
+      <div class="logo"><h1 class="logo-title">Music Carry</h1></div>
+      <div class="main-form">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quos
+          blanditiis error repellat reprehenderit rem doloribus mollitia
+          inventore suscipit ipsum?
+        </p>
+        <p>Welcome to music</p>
+        <p>Join the movement!</p>
 
+        <div class="allnames">
+          <div class="form-name">
+            <label for="fname">first name</label>
+            <input type="text" id="fname" name="name" />
+          </div>
+          <div class="form-name">
+            <label for="lname">last name</label>
+            <input type="text" id="lname" name="name" />
+          </div>
+        </div>
+        <div class="contacts">
+          <div class="email-phone">
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div class="email-phone">
+            <label for="phone">phone number</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+        </div>
+        <div class="passwords">
+          <div class="main-password">
+            <label for="pwd">password</label>
+            <input type="password" id="pwd" name="pwd" />
+          </div>
+          <div class="main-password">
+            <label for="confirm_password">confirm password</label>
+            <input
+              type="password"
+              id="confirm_password"
+              name="confirm_password"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="cta">
+        <button class="account-btn">create account</button>
+        <p class="account-call">
+          Already have an account? <span class="log-in">Log in</span>
+        </p>
+      </div>
+    </form>
     <!-- JS Link -->
     <script src="./js/app.js"></script>
   </body>

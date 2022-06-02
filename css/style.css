@@ -1,4 +1,14 @@
 /* June 1st, 2022 */
+/* fonts */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto&display=swap");
+
+/* 
+font-family: 'Kdam Thmor Pro', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
 /* Reset */
 *,
 *::before,
@@ -7,19 +17,127 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Main Body */
 :root {
-  /* Test Font */
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-.container {
-  width: 80%;
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 5em;
+body {
+  background-image: url("yeshi-kangrangSmalll.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #222;
 }
 
 /* Typography */
-.sign-up-title {
+label {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+}
+.main-form > p {
+  margin-bottom: 2em;
+  line-height: 1.5;
+  font-weight: 900;
+}
+.logo {
+  width: 100%;
+  position: absolute;
+  top: 35%;
+  grid-column: 1/3;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 2em;
+}
+.logo-title {
+  font-family: "Kdam Thmor Pro", sans-serif;
   font-size: 3rem;
+  font-weight: 300;
+}
+
+/* Form */
+form {
+  position: relative;
+  background-color: #fff;
+  width: 950px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 60vh 20vh 20vh;
+}
+.main-form {
+  grid-column: 3/6;
+  grid-row: 1/2;
+  padding: 3em 3em 0;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+}
+
+/* Inputs */
+.allnames,
+.contacts,
+.passwords {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 1.5em;
+}
+.form-name,
+.email-phone,
+.main-password {
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  border-radius: 20px;
+}
+input[type="text"] {
+  border: 1px solid #e5e7eb;
+}
+input[type="email"] {
+  border: 1px solid #e5e7eb;
+}
+input[type="password"] {
+  border: 1px solid #e5e7eb;
+}
+input[type="tel"] {
+  border: 1px solid #e5e7eb;
+}
+input:focus {
+  border: 1px solid #000;
+}
+
+.image-logo {
+  grid-column: 1/3;
+  grid-row: 1/4;
+  background-image: url(/images/yeshi-kangrangSmall.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Button Container */
+.cta {
+  grid-column: 3/6;
+}
+
+/* Buttons */
+.account-call {
+  font-size: 0.8rem;
+  margin-left: 3.5em;
+}
+.log-in {
+  cursor: pointer;
+}
+.account-btn {
+  cursor: pointer;
+  background-color: #596d48;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  padding: 0.75em 2.5em;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 3em 0 2em;
+  margin-left: 3.5em;
 }
