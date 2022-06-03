@@ -9,6 +9,7 @@
 font-family: 'Kdam Thmor Pro', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
+
 /* Reset */
 *,
 *::before,
@@ -24,6 +25,9 @@ font-family: 'Roboto', sans-serif;
 }
 body {
   background-color: #222;
+}
+img {
+  max-width: ;
 }
 
 /* Typography */
@@ -63,14 +67,12 @@ form {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 60vh 20vh 20vh;
-  /* grid-template-rows: repeat(4, 20%); */
 }
 .main-form {
   grid-column: 3/6;
   grid-row: 1/2;
   padding: 3em 3em 0;
   box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.3);
-  /* box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px; */
 }
 
 /* Inputs */
@@ -115,7 +117,6 @@ input:focus {
 }
 
 /* Logo Area */
-
 .image-logo {
   position: relative;
   grid-column: 1/3;
@@ -133,6 +134,7 @@ input:focus {
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.7rem;
 }
+
 /* Button Container */
 .cta {
   grid-column: 3/6;
