@@ -69,7 +69,8 @@ form {
   grid-column: 3/6;
   grid-row: 1/2;
   padding: 3em 3em 0;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.3);
+  /* box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px; */
 }
 
 /* Inputs */
