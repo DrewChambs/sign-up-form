@@ -11,7 +11,16 @@
   <body>
     <form>
       <div class="image-logo"></div>
-      <div class="logo"><h1 class="logo-title">Music Carry</h1></div>
+      <div class="logo">
+        <img
+          src="./images/odin-lined.png"
+          alt="Odin Lined logo"
+          class="logo-odin"
+          width="70"
+          height="90"
+        />
+        <h1 class="logo-title">Music Carry</h1>
+      </div>
       <div class="main-form">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quos
@@ -38,7 +47,14 @@
           </div>
           <div class="email-phone">
             <label for="phone">phone number</label>
-            <input type="tel" id="phone" name="phone" />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="123-456-7890"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              maxlength="10"
+            />
           </div>
         </div>
         <div class="passwords">
